@@ -1,0 +1,173 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+  }
+.container{
+    padding: 1rem;
+    background: hsl(226, 43%, 10%);
+    min-height: 100vh;
+}
+.jeremy{
+    color: #fff;
+    background: hsl(235, 46%, 20%);
+    border-radius: 15px;
+    margin-bottom: 1.2rem;
+}
+.jeremyImg{
+    background-color: hsl(246, 80%, 60%);
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.jeremy img{
+    width: 70px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin: 1rem;
+}
+.jeremyImg p:first-child, .previous-Time{
+    color:  hsl(236, 100%, 87%);
+    font-size: 1rem;
+}
+.jeremyImg p:last-child{
+    color: #fff;
+    font-size: 1.5rem;
+}
+#toogle-timeline{
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+#toogle-timeline a{
+    color:#9ca1db;
+    text-decoration: none;
+}
+#toogle-timeline a:hover,#toogle-timeline a:active{
+    color: #fff;
+}
+
+.card{
+background-color: hsl(15, 100%, 70%);
+border-radius: 15px;
+position: relative;
+margin-bottom: 7rem;
+cursor: pointer;
+}
+ .card img{
+    margin-left: 70%;
+ }
+.action{
+    background-color: hsl(235, 46%, 20%);
+    color: #fff;
+    padding: 1.6rem;
+    border-radius: 15px;
+    position: absolute;
+    top: 40px;
+    width: 100%;
+}
+.action_text{
+    width: 100%;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+  Font-size: 1.2rem;
+  font-weight: 500;
+ 
+}
+.action:hover{
+    background-color: #2b3166;
+}
+.time{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.current-Time{
+    font-size: 2.5rem;
+}
+#card-2{
+    background-color: hsl(195, 74%, 62%);
+}
+#card-3{
+    background-color: hsl(348, 100%, 68%);
+}
+#card-4{
+    background-color: hsl(145, 58%, 55%);
+}
+#card-5{
+    background-color: hsl(264, 64%, 52%);
+}
+#card-6{
+    background-color: hsl(43, 84%, 65%);
+}
+
+@media screen and (min-width: 1024px){
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+         justify-content: space-evenly;
+    }
+    .left-side{
+        flex-basis: 20%;
+    }
+    .right-side{
+        flex-basis: 75%;
+        display: grid;
+        grid-template-columns: repeat(3, 2fr);
+        gap: 2rem;
+      
+    }
+ .jeremy{
+    display: block;
+     margin-top: 5rem;
+ }
+ .jeremyImg{
+    display: block;
+ }
+ .jeremyImg img{
+    margin: 2rem;
+ }
+ .jeremyImg{
+    padding:  1rem;
+    
+ }
+ #jeremy__text{
+    margin-bottom: 2rem;
+ margin-left: 1rem;
+ }
+ .jeremyImg p:last-child{
+    color: #fff;
+    font-size: 2rem;
+}
+ #toogle-timeline{
+    display: block;
+    
+  }
+  .link{
+    margin-bottom: 2rem;
+    cursor: pointer;
+  }
+ 
+ .card{
+    margin-top: 2rem;
+ }
+ .time{
+    display: block;
+    margin: 1rem ;
+    
+ }
+ .current-Time{
+    font-size: 4rem;
+ }
+ 
+}
